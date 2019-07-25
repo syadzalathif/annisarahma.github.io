@@ -1,0 +1,28 @@
+html,
+body {
+  background-color: #8ec6e3;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 0;
+}
+#catfield {
+  display: flex;
+  flex-direction: column;
+
+  align-content: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  width: 100%;
+}
+#cathouse {
+  padding: 2rem;
+}
+#cat {
+  margin: 2rem auto;
+  width: 8rem;
+  height: 8rem;
+}
+#time {
+  font-weight: bold;
+}

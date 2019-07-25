@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <title>pwa-time</title>
+    <link rel="shortcut icon" href="gambar1.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="cat.webmanifest" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="description"
+      content="Testing service workers with Parcel bundler 🐱"
+    />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="msapplication-starturl" content="/" />
+    <meta name="theme-color" content="#8ec6e3" />
+  </head>
+  <body>
+	
+    <main id="catfield">
+      <div id="cathouse">
+	  <h1><center>Tugas PWM</center></h1>
+        <img src="gambar1.png" alt="gambar1" id="cat" />
+        <p id="time">Loading...</p>
+        <small>
+          <a
+            href="https://github.com/AnnisaRahmawati/pwa-master"
+            target="_blank"
+            rel="noreferrer"
+          >
+           165610049/165610119
+          </a>
+        </small>
+		<h3>Difa Isnaini <br/>
+		Annisa Rahmawati </h3>
+      </div>
+    </main>
+    <script src="script.js" defer></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('swkita.js').then(function() {
+          console.log('🐱 Meow! Service worker registered.')
+        })
+      }
+    </script>
+  </body>
+</html>

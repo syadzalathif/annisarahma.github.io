@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "alias": "cat-pwa.now.sh",
+  "builds":[
+    {
+      "src": "package.json",
+      "use": "@now/static-build"
+    }
+  ],
+  "github": {
+    "enabled": true,
+    "autoAlias": true
+  }
+}
